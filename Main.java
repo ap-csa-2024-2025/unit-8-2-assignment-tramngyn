@@ -29,7 +29,7 @@ public class Main
 
     // TODO: Make an array of Strings as well as a target, and test your linearSearch method
     String wordTarget = "Hello";
-    System.out.println(linearSearch(sentences), wordTarget);
+    System.out.println(linearSearch(sentences, wordTarget));
 
   }
 
@@ -52,14 +52,14 @@ public class Main
     {
       sum += word.length();
     }
-    avg = sum/(arr.length);
+    avg = sum/(double)(arr.length);
     return avg;
   }
 
   public static int arrayMax(int[] arr)
   {
     int max = arr[0];
-    for (int num : array) 
+    for (int num : arr) 
     {
       if (num > max) {
         max = num;
@@ -79,4 +79,3 @@ public class Main
     return false;
   }
 }
-
